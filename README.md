@@ -2,8 +2,8 @@ Trying out
 
 # Bud - The Full-Stack Web Framework for Go
 
-## how to
-### - create stuff
+### how to
+#### - create stuff
 project:
 ```bash
 bud create hello-bud
@@ -15,12 +15,12 @@ controllers with views:
 bud new controller post index show
 ```
 
-*Scaffold a new post controller at the root route
+* Scaffold a new post controller at the root route
 ```bash
 bud new controller post:/
 ```
 
-### - run
+#### - run
 ```bash
 bud run
 ```
