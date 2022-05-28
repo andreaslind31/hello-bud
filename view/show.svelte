@@ -1,18 +1,18 @@
 <script>
-  export let user = {}
+  export let post = {}
 </script>
 
-<h1>Showing User</h1>
+<h1>Showing Post</h1>
 
 <table border="1" cellpadding="10">
   <thead>
-    {#each Object.keys(user) as key}
+    {#each Object.keys(post) as key}
       <th>{key}</th>
     {/each}
   </thead>
   <tr>
-    {#each Object.keys(user) as key}
-      <td>{user[key]}</td>
+    {#each Object.keys(post) as key}
+      <td>{post[key]}</td>
     {/each}
   </tr>
 </table>
