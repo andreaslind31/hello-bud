@@ -2,25 +2,27 @@ package controller
 
 import (
 	context "context"
+
+	"github.com/matthewmueller/hackernews"
 )
 
 type Controller struct {
-	// Dependencies...
+	HN *hackernews.Client
 }
 
-// Post struct
-type Post struct {
+// Story struct
+type Story struct {
 	// Fields...
 }
 
-// Index of posts
+// Index of stories
 // GET /
-func (c *Controller) Index(ctx context.Context) (posts []*Post, err error) {
-	return []*Post{}, nil
+func (c *Controller) Index(ctx context.Context) (stories []*hackernews.Story, err error) {
+	return c.HN.FrontPage(ctx)
 }
 
-// Show post
+// Show story
 // GET /:id
-func (c *Controller) Show(ctx context.Context, id int) (post *Post, err error) {
-	return &Post{}, nil
+func (c *Controller) Show(ctx context.Context, id int) (story *Story, err error) {
+	return &Story{}, nil
 }

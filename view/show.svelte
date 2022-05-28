@@ -1,18 +1,18 @@
 <script>
-  export let post = {}
+  export let story = {}
 </script>
 
-<h1>Showing Post</h1>
+<h1>Showing Story</h1>
 
 <table border="1" cellpadding="10">
   <thead>
-    {#each Object.keys(post) as key}
+    {#each Object.keys(story) as key}
       <th>{key}</th>
     {/each}
   </thead>
   <tr>
-    {#each Object.keys(post) as key}
-      <td>{post[key]}</td>
+    {#each Object.keys(story) as key}
+      <td>{story[key]}</td>
     {/each}
   </tr>
 </table>

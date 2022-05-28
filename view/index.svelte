@@ -1,24 +1,24 @@
 <script>
-  export let posts = []
+  export let stories = [];
 </script>
 
-<h1>Post Index</h1>
+<h1>Story Index</h1>
 
 <table border="1" cellpadding="10">
-  {#if posts.length > 0}
+  {#if stories.length > 0}
     <thead>
-      {#each Object.keys(posts[0]) as key}
+      {#each Object.keys(stories[0]) as key}
         <th>{key}</th>
       {/each}
     </thead>
   {/if}
-  {#each posts as post}
+  {#each stories as story}
     <tr>
-      {#each Object.keys(post) as key}
+      {#each Object.keys(story) as key}
         {#if key === "id"}
-          <td><a href={`/${post[key]}`}>{post[key]}</a></td>
+          <td><a href={`/${story[key]}`}>{story[key]}</a></td>
         {:else}
-          <td>{post[key]}</td>
+          <td>{story[key]}</td>
         {/if}
       {/each}
     </tr>
