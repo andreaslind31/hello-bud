@@ -1,8 +1,9 @@
 <script>
   export let stories = [];
+  let src = "images/hn-logo.jpeg";
 </script>
 
-<h1>Story Index</h1>
+<h1><img {src} alt="logo" /></h1>
 
 <table border="1" cellpadding="10">
   {#if stories.length > 0}
