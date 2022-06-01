@@ -1,9 +1,9 @@
 <script>
   export let stories = [];
-  let src = "images/hn-logo.jpeg";
+  import Header from "./Header.svelte";
 </script>
 
-<h1><img {src} alt="logo" /></h1>
+<Header />
 
 <table border="1" cellpadding="10">
   {#if stories.length > 0}

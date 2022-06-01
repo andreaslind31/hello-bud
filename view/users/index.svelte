@@ -1,8 +1,10 @@
 <script>
-  export let users = []
+  export let users = [];
+  import Header from "../Header.svelte";
 </script>
 
-<h1>User Index</h1>
+<Header />
+<h1>Hello users</h1>
 
 <table border="1" cellpadding="10">
   {#if users.length > 0}
